@@ -53,7 +53,8 @@ class Cadastro{
 
 	void cadastro(){
 		Database data;
-		data.write_DB(nome(), email(), localizacao(), senha());
-		data.read_DB();
+		// data.write_DB(nome(), email(), localizacao(), senha());
+		//data.read_DB();
+		data.read_unique_DB();
 	}
 };
