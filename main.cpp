@@ -12,7 +12,7 @@ using namespace std;
 
 int main(int argc, char** argv) {
 	int option=0;
-	cout << ("Bem Vindo ao Zeca Delivery") << endl;
+	cout << ("Bem Vindo ao Zé Delivery") << endl;
 	cout << ("**************************") << endl;
 	cout << ("Escolha uma opção: 1 - Login, 2 - Novo cadastro") << endl;
 	cout << ("Resposta: ");
