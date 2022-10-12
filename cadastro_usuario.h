@@ -18,7 +18,6 @@ class Cadastro{
 	bool flag = false;
 
 	string nome(){
-		cout << ("<--> Cadastro de Usuário <-->") << endl;
 		cout << ("Usuário: ");
 		cin >> (NOME);
 		return NOME;
@@ -52,9 +51,11 @@ class Cadastro{
 	}
 
 	void cadastro(){
+		// Cria instância
 		Database data;
-		// data.write_DB(nome(), email(), localizacao(), senha());
-		//data.read_DB();
-		data.read_unique_DB();
-	}
+
+		// Herança
+		data.write_DB(nome(), email(), localizacao(), senha());
+		data.read_DB();
+	}	
 };

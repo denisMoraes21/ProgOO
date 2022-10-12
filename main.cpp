@@ -6,16 +6,28 @@
 #include <vector>
 #include <sstream>
 #include "cadastro_usuario.h"
+#include "login.h"
 using namespace std;
-
 
 
 int main(int argc, char** argv) {
 	int option=0;
-	printf ("Bem Vindo ao Zeca Delivery \n");
-	printf ("************************** \n");
-	printf ("Faça seu cadastro\n");
-        Cadastro cadastrando;
-	cadastrando.cadastro();
+	cout << ("Bem Vindo ao Zeca Delivery") << endl;
+	cout << ("**************************") << endl;
+	cout << ("Escolha uma opção: 1 - Login, 2 - Novo cadastro") << endl;
+	cout << ("Resposta: ");
+	cin >> option;
+	Login log(true);
+
+	switch(option){
+		case (1):
+			log.login_success();
+			break;
+		case (2):
+			// Encapsulamento
+        		Cadastro cadastrando;
+			cadastrando.cadastro();
+			break;
+	}
 	return 0;
 }

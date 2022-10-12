@@ -5,11 +5,14 @@
 #include <string.h>
 #include <vector>
 #include <sstream>
-#include "database.h"
+
 using namespace std;
 
 class Login{
-        public:
+public:
+        //Construtor 
+        Login(bool google_login){}
+
         char NOME_[60];
         char SENHA_[100];
 
@@ -19,9 +22,23 @@ class Login{
                 return NOME_;
         }
 
+        // Polimorfismo
+        string usuario(string email){
+                cout << ("Usuário: ");
+                cin >> NOME_;
+                return NOME_ + email;
+
+        }
+
         string senha(){
                 cout << ("Senha: ");
                 cin >> SENHA_;
                 return SENHA_;
+        }
+
+        void login_success(){
+                usuario();
+                senha();
+                cout << ("Login bem sucedido!") << endl;
         }
 };
