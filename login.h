@@ -10,9 +10,6 @@ using namespace std;
 
 class Login{
 public:
-        //Construtor 
-        Login(bool google_login){}
-
         char NOME_[60];
         char SENHA_[100];
 

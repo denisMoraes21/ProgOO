@@ -28,6 +28,6 @@ class Database{
         }
 
 	void clean_DB(){
-		truncate("database.csv", 0);
+		cout << "ok";
 	}
 };

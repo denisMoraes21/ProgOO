@@ -10,18 +10,17 @@
 using namespace std;
 
 
-int main(int argc, char** argv) {
+int main() {
 	int option=0;
 	cout << ("Bem Vindo ao Zé Delivery") << endl;
 	cout << ("**************************") << endl;
 	cout << ("Escolha uma opção: 1 - Login, 2 - Novo cadastro") << endl;
 	cout << ("Resposta: ");
 	cin >> option;
-	Login log(true);
 
 	switch(option){
 		case (1):
-			log.login_success();
+			cout << "ok";
 			break;
 		case (2):
 			// Encapsulamento
